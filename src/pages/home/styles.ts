@@ -1,4 +1,4 @@
-import { styled, Heading, Text } from '@ignite-ui/react'
+import { styled, Heading, Text, Button } from '@ignite-ui/react'
 
 export const Container = styled('div', {
   maxWidth: 'calc(100vw - (100vw - 1160px) / 2)',
@@ -32,4 +32,9 @@ export const Preview = styled('div', {
   '@media(max-width: 600px)': {
     display: 'none',
   },
+})
+
+export const ScheduleButton = styled(Button, {
+  width: '100%',
+  marginTop: '$4',
 })

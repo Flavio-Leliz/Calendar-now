@@ -1,11 +1,16 @@
 import { Heading, Text } from '@ignite-ui/react'
-import { Container, Hero, Preview } from './styles'
+import { Container, Hero, Preview, ScheduleButton } from './styles'
 import Image from 'next/image'
 import previewImage from '../../assets/app-preview.png'
 import { ClaimUserNameForm } from './components/ClaimUserNameForm'
 import { NextSeo } from 'next-seo'
+import { ArrowRight } from 'phosphor-react'
+import router from 'next/router'
 
 export default function Home() {
+  async function handleNextStep() {
+    router.push('/register/connect-calendar')
+  }
   return (
     <>
       <NextSeo
@@ -23,6 +28,13 @@ export default function Home() {
           </Text>
 
           <ClaimUserNameForm />
+
+          <ScheduleButton size="sm" type="submit" onClick={handleNextStep}>
+            Conectar agenda
+            <ArrowRight />
+          </ScheduleButton>
+
+          <Text size="sm">Já tem uma conta? Então conecte sua agenda</Text>
         </Hero>
 
         <Preview>
