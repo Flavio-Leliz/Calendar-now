@@ -27,6 +27,7 @@ export default function Home() {
             Agendar
             <ArrowRight />
           </ScheduleButton>
+          <Text size="sm">Já tem uma conta? Então conecte sua agenda</Text>
         </Hero>
 
         <Preview>
