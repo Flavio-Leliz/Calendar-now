@@ -1,5 +1,5 @@
 import { Heading, Text } from '@ignite-ui/react'
-import { Container, Hero, Preview } from './styles'
+import { Container, Hero, Preview, ScheduleButton } from './styles'
 import Image from 'next/image'
 import previewImage from '../../assets/app-preview.png'
 import { ClaimUserNameForm } from './components/ClaimUserNameForm'
@@ -23,6 +23,10 @@ export default function Home() {
           </Text>
 
           <ClaimUserNameForm />
+          <ScheduleButton size="sm" type="submit" onClick={handleNextStep}>
+            Agendar
+            <ArrowRight />
+          </ScheduleButton>
         </Hero>
 
         <Preview>
