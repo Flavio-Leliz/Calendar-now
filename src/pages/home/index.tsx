@@ -4,8 +4,13 @@ import Image from 'next/image'
 import previewImage from '../../assets/app-preview.png'
 import { ClaimUserNameForm } from './components/ClaimUserNameForm'
 import { NextSeo } from 'next-seo'
+import router from 'next/router'
 
 export default function Home() {
+  async function handleNextStep() {
+    router.push('/register/connect-calendar')
+  }
+  
   return (
     <>
       <NextSeo
