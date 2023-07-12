@@ -4,6 +4,7 @@ import Image from 'next/image'
 import previewImage from '../../assets/app-preview.png'
 import { ClaimUserNameForm } from './components/ClaimUserNameForm'
 import { NextSeo } from 'next-seo'
+import { ArrowRight } from 'phosphor-react'
 import router from 'next/router'
 
 export default function Home() {
