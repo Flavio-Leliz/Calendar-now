@@ -5,12 +5,8 @@ import previewImage from '../../assets/app-preview.png'
 import { ClaimUserNameForm } from './components/ClaimUserNameForm'
 import { NextSeo } from 'next-seo'
 import { ArrowRight } from 'phosphor-react'
-import router from 'next/router'
 
 export default function Home() {
-  async function handleNextStep() {
-    router.push('/register/connect-calendar')
-  }
   
   return (
     <>
@@ -29,7 +25,7 @@ export default function Home() {
           </Text>
 
           <ClaimUserNameForm />
-          <ScheduleButton size="sm" type="submit" onClick={handleNextStep}>
+          <ScheduleButton size="sm">
             Agendar
             <ArrowRight />
           </ScheduleButton>
