@@ -33,3 +33,9 @@ export const Preview = styled('div', {
     display: 'none',
   },
 })
+
+export const ScheduleButton = styled(Button, {
+  width: '100%',
+  marginTop: '$4',
+})
+
